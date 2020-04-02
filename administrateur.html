@@ -14,7 +14,7 @@
     </header>
 
     <nav>
-        <div id="classroom-section-title"><h3><i class="fas fa-chalkboard-teacher"></i>FIDEV2</h3></div>
+        <div id="classroom-section-title"><h3 id="class-title"><i class="fas fa-chalkboard-teacher"></i> FIDEV2</h3></div>
         <div id="planning-section-title"><h3><i class="fas fa-calendar-week"></i>Planning</h3></div>
     </nav>
 
@@ -47,7 +47,7 @@
                             <ul>
                             <li>
                                 <div class="list-item-container">
-                                    <div class="list-item-title">FIDEV2</div>
+                                    <div class="list-item-title" id="item-1">FIDEV2</div>
                                     <div class="list-item-logo">
                                         <i class="fas fa-pencil-alt"></i>
                                         <i class="fas fa-times"></i>
@@ -56,7 +56,7 @@
                             </li>
                             <li>
                                 <div class="list-item-container">
-                                    <div class="list-item-title">Graphiste</div>
+                                    <div class="list-item-title" id="item-2">Graphiste</div>
                                     <div class="list-item-logo">
                                         <i class="fas fa-pencil-alt"></i>
                                         <i class="fas fa-times"></i>
@@ -65,7 +65,7 @@
                             </li>
                             <li>
                                 <div class="list-item-container">
-                                    <div class="list-item-title">Communication</div>
+                                    <div class="list-item-title" id="item-3">Communication</div>
                                     <div class="list-item-logo">
                                         <i class="fas fa-pencil-alt"></i>
                                         <i class="fas fa-times"></i>
@@ -77,13 +77,13 @@
                     </div>
                 </div>
 
-                <div id="new-class-form">
+                <form id="new-class-form">
                     <i class="fas fa-plus"></i>
                     <div>
-                        <input type="text" placeholder="Nouvelle classe" />
-                        <button>Enregistrer</button>
+                        <input type="text" placeholder="Nouvelle classe" id="class"/>
+                        <button type="submit">Enregistrer</button>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div id="user-form-container">

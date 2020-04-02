@@ -1,3 +1,4 @@
+/* Partie 1: Haut de page (header et nav barre) */
 header
 {
     display: flex;
@@ -10,6 +11,7 @@ header h1
     margin-right: 8%;
 }
 
+/* Bouton classe et planning */
 nav
 {
     width: 20%;
@@ -49,9 +51,14 @@ nav > div > h3
 
 nav > div > h3 > svg
 {
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
+
+
+
+/* Partie 2: Section centrale (tableau classe et planning) */
+/* Tableau centrale (style commun aux deux tableaux) */
 table{
     width: 98%;
     margin: 2% auto 2% auto;
@@ -70,12 +77,14 @@ table{
     background-color: #B80E1C;
 }
 
-tr{
+tr
+{
     display: flex;
     justify-content: space-around;
 
     font-size: 1.6em;
     width: 100%;
+    text-align: center;
 }
 
 td, th
@@ -84,13 +93,43 @@ td, th
     border: 1px solid black;
 }
 
+.modif_form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modif_form > select
+{
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.modif_form > input
+{
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.modif_form > button
+{
+    margin-bottom: 2%;
+}
+
+
+
+
+/* Partie 3: Section de bas de page: (Formulaire choix de classe et ajout d'utilisateur) */
 #bottom-section
 {
     display: flex;
     justify-content: space-between;
 }
 
-/* Dropdown */
+
+/* Liste de selection des classe (menu deroulant) */
 .dropdown-container 
 {
     height:100%;
@@ -248,6 +287,8 @@ td, th
     transition-duration: 0.5s;
 }
 
+
+/* Formulaire pour ajouter une classe */
 #new-class-form
 {
     display: flex;
@@ -265,6 +306,8 @@ td, th
     color: green;
 }
 
+
+/* Formulaire pour ajouter un utilisateur */
 #user-form-container
 {
     width: 30%;
